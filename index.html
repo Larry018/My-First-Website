@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-sca">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Amazing_video</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<!-- <section class="showcase">  -->
+	<!-- To make show case active -->
+	<!-- <section class="showcase active" -->
+	<!-- Remove the active for JS  -->
+	<section class="showcase">
+		<header>
+			<h2 class="logo"><img src="car.png" width="120px" height="120px"></h2>
+			<!-- Add active to toggle -->
+			<!-- <div class="toggle"> </div> -->
+			<!-- <div class="toggle active"> </div> -->
+			<!-- <Remove the active for JS -->
+			<div class="toggle"></div>
+			<!-- Add the line below after JS -->
+		</header>
+		<video src="aspahlt.mp4" autoplay muted loop></video>
+		<div class="overlay"></div>
+		<div class="text">
+
+			<h2> Aspalt Extreme </h2> <br>
+
+			<h5> Download from playstore. </h5>
+
+			<p> This is a racing game full of action and violence.
+			</p>
+
+			<a href="#"> Explore </a>
+			
+			<ul class="social">
+				<li><a href="#"><img src="facebook.png" alt=""></a></li>
+				<li><a href="#"><img src="twitter.png" alt=""></a></li>
+				<li><a href="#"><img src="instagram.png" alt=""></a></li>
+			</ul>
+		</div>
+	</section>
+<div class="menu">
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">News</a></li>
+		<li><a href="">Destination</a></li>
+		<li><a href="">Blog</a></li>
+		<li><a href="">Contact</a></li>
+	</ul>
+	
+</div>
+
+<script>
+	const menuToggle = document.querySelector('.toggle');
+	const showcase = document.querySelector('.showcase');
+
+	menuToggle.addEventListener('click', () => {
+		menuToggle.classList.toggle('active')
+		showcase.classList.toggle('active')
+	});
+</script>
+<!-- FINALLY: For the transition go to the showcase in css -->
+</body>
+</html>
